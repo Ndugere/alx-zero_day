@@ -15,5 +15,6 @@ int max(int num_args, ...)
 		int x = va_arg(args, int);
 		printf("x is %d\n", x);
 	}
+	va_end(args);
 	return 0;
 }
